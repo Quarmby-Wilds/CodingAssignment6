@@ -24,9 +24,14 @@ function bnj() {
         compChoice = "Hunter";
     }
 
+    results = name + ", you picked " + choice + ".\nThe computer picked " + compChoice
+
+    const resultElement = document.getElementById("results")
+    resultElement.innerHTML = results
+
     console.log(name + ", you picked " + choice)
     console.log("The computer picked " + compChoice)
 
 }
 
-bnj()
+document.addEventListener("DOMContentLoaded", bnj)
